@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset ="UTF-8"/>
+	<title>Transmissão em Directo</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/responsivo.css"/>
+</head>
+
+<script> 
+		function mudaFoto (foto)
+		{
+			document.getElementById("icone").src = foto;
+		}
+</script>
+
+<body>
+
+<div id="interface">
+	<header id="cabecalho">
+	<hgroup>
+		<h1>Fórmula 1</h1>
+			<h2>Saiba mais sobre a Fórmula 1</h2>
+
+<img id="icone" src="Imagens/bandeira.png";>
+
+	<nav id="menu">
+		<h1>Menu Principal</h1>
+			<ul type="disc">
+				<li onmouseover="mudaFoto('Imagens/bandeira.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="index.html">Home</a></li>
+				<li onmouseover="mudaFoto('Imagens/historia.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"> <a> História</a>
+					<ul>
+						<li><a href="pilotos.html">Pilotos</a></li>
+						<li><a href="formula1.html">Fórmula 1</a></li>
+					</ul>
+					</li>
+				<li onmouseover="mudaFoto('Imagens/fotos.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="fotos.html"> Fotos</a></li>
+				<li onmouseover="mudaFoto('Imagens/video.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="videos.html">Videos</a></li>
+				<li onmouseover="mudaFoto('Imagens/curioso.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="curiosidade.html">Curiosidade</a></li>
+				<li onmouseover="mudaFoto('Imagens/tv.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="aovivo.html">Ao Vivo</a></li>
+			</ul>
+	</nav>
+</header>
+
+[AQUI ENTRA UMA FOTO]
+
+<footer id="rodape">	
+		<p>Website feito por <b>José Jacob Barros Bongo</b><br/>
+<a href="https://www.facebook.com/bongotecnology" target="_blank"> Facebook</a> | <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a>
+Copyright &copy 2019</p>
+</footer></div>
+</body>
+</html>
