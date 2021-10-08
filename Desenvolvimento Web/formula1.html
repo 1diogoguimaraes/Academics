@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset ="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Histórias</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="Imagens/icon.png">
+</head>
+
+<script> 
+		function mudaFoto (foto)
+		{
+			document.getElementById("icone").src = foto;
+		}
+		function myFunction() {
+  var x = document.getElementById("menudentro");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<body>
+
+<div id="interface">
+	<header id="cabecalho">
+<div class="para-telefone">
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a></div>
+		<h1>Fórmula 1</h1>
+			<h2>Saiba mais sobre a Fórmula 1</h2>
+
+<img id="icone" src="Imagens/bandeira.png";>
+
+	<nav id="menu">
+		<ul id="menudentro">
+				<li onmouseover="mudaFoto('Imagens/bandeira.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="index.html">Home</a></li>
+				<li onmouseover="mudaFoto('Imagens/historia.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"> <a> História</a>
+					<ul>
+						<li><a href="pilotos.html">Pilotos</a></li>
+						<li><a href="formula1.html">Fórmula 1</a></li>
+					</ul>
+					</li>
+				<li onmouseover="mudaFoto('Imagens/fotos.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="fotos.html"> Fotos</a></li>
+				<li onmouseover="mudaFoto('Imagens/video.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="videos.html">Videos</a></li>
+				<li onmouseover="mudaFoto('Imagens/curioso.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="curiosidade.html">Curiosidade</a></li>
+				<li onmouseover="mudaFoto('Imagens/tv.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="http://www.tvzava.com/2018/05/tvsport_66.html" target="_blank">Ao Vivo</a></li>
+			</ul>
+	</nav>
+</header>
+<style>
+			p{ text-align: justify}
+			img{float:right;
+			height:200px;
+			margin:5px}
+	</style>
+</head>
+
+<body>
+
+<h2>Fórmula 1</h2>
+<img src="Imagens/1950.jpg">
+<p>A história da Fórmula 1 tem início com as competições de Grandes Prêmios disputadas na Europa, no início do século XX. Apenas durante a Segunda Guerra Mundial, houve uma pausa. As competições de Grande Prêmio recomeçaram logo após o fim do conflito, em 9 de Setembro de 1945, prosseguindo até a atualidade, sem interrupções.</p>
+
+<p>Seguindo os dirigentes do automobilismo, a FIA (Federação Internacional de Automobilismo) anunciou a prova inaugural do campeonato mundial de F-1, em um sábado, 13 de maio de 1950 no Circuito de Silverstone, na Inglaterra, para não coincidir com um culto religioso local.
+O campeonato anunciado compreendia 6 GPs a serem disputados na Europa: Inglaterra, Mônaco, Suíça, Bélgica, França e Itália, e seria ainda adicionado o resultado das 500 Milhas de Indianápolis, tornando, dessa maneira, um campeonato "mundial" (apesar do fato de que os carros, equipes e pilotos que competiam nos EUA serem completamente diferentes dos da Europa).</p>
+
+<p>Devido às dificuldades do pós-guerra, os carros eram todos do pré-guerra. Permitiu-se a participação de carros com motores superpressurizados até 1,5 litro ou com motores aspirados de 4,5 litros. A confirmação da presença da Alfa Romeo foi determinante para o momento. Sua participação com as Alfettas, dominantes na época, trouxe prestígio para o campeonato. Confirmaram presença a Ferrari(mas os carros não ficaram prontos para a prova inaugural), Maserati, algumas "Voiturettes" ERA e carros esportivos modificados, como os Talbots.</p>
+
+<p>Seriam descartados os 3 piores resultados das 7 corridas disputadas. A pontuação era assim dividida: 8 pontos para o primeiro colocado; 6 para o segundo; 4 para o terceiro; 3 para o quarto; 2 para o quinto colocado e um ponto para o piloto que marcasse a volta mais rápida da prova.
+A prova inaugural em Silverstone contou com um público de 100.000 pessoas estimadas, além da presença do Rei George VI, a Rainha Elizabeth e a princesa Margareth.</p>
+
+<footer id="rodape">	
+		<p>Website feito por <b>José Jacob Barros Bongo</b><br/>
+<a href="https://www.facebook.com/bongotecnology" target="_blank"> Facebook</a> | <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a>
+Copyright &copy 2019</p>
+</footer>
+</div>
+</body>
+</html>

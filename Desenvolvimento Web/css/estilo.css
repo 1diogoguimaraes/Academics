@@ -1,0 +1,272 @@
+@charset "UTF-8";
+@font-face {
+			font-family:'fonteLogo';
+			src: url("../fontes/bubblegum-sans-regular.otf");	/* Utilização de fonte externa*/
+}
+
+ body{ font-family: Arial, sans-serif;
+	   background: url("../Imagens/rodas.png");	/* Imagem de fundo no ecrã "Bem-vindo ao novo ano"*/
+	   color: rgba(0,0,0,1);
+		}
+		
+div#interface{width: 900px; /* Largura do anbiente de navegação de 900px*/
+			 background-color: #ffffff;
+			 margin: -20px auto 0px auto;
+			 box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+			 padding: 10px 10px 10px 10px;}
+			 
+p{ text-align: justify;	/* Alinhamento de texto justificado*/
+			text-indent: 50px;	/* Abertura do parágrafo de 50px*/
+		}
+
+		a{ color: #8080ff;
+		   text-decoration: none;}
+		   
+a:hover {text-decoration: underline;}		   
+		
+header#cabecalho {position:relative;}
+		
+header#cabecalho img#icone{position: absolute;
+						 right:0;
+						 top: 70px;
+						 width: 150px;
+						 height: 150px;
+						 }
+						 
+header#cabecalho{ border-bottom: 1px #606060 solid;	/* Tamanho, cor e tipo de borda*/
+				 height: 250px;	/* Altura do cabecalho*/
+				 background: url("../Imagens/indo.png") no-repeat 0px 85px;}	/* Imagem do cabecalho*/
+
+header#cabecalho h1{ font-family: 'FonteLogo', sans-serif;
+					font-size: 30pt;
+					color: #606060;
+					text-shadow: 1px 1px 1px 1px rgba(0,0,0,.6);
+					padding: -5px;
+					margin-bottom: -3px;
+					margin-top: 1px;
+}
+
+.para-telefone{display:none}
+
+header#cabecalho h2{ font-family: 'FonteLogo', sans-serif;
+					font-size: 15pt;
+					color: #888888;
+					padding: 0px;
+					margin-top: 0px;
+	
+}
+		
+figure.foto-legenda{ position: relative;
+					border: 8px solid white;
+					box-shadow: 1px 1px 4px black;
+	
+}
+
+figure.foto-legenda img{ width: 100%;
+height: 100%;
+}
+
+figure.foto-legenda figcaption{ opacity: 0;
+							position: absolute;
+							top: 0px;
+							background-color: rgba(0,0,0,.4);
+							color: white;
+							width: 100%;
+							height: 100%;
+							padding: 10px;
+							box-sizing: border-box;
+							transition: opacity 1s;}
+
+figure.foto-legenda:hover figcaption{ opacity: 1;}
+
+nav#menu{display: block;	}
+
+nav#menu ul{ list-style: none;
+			text-transform: uppercase;
+			position: absolute;	/* tipo de Posicionamento Absoluto*/
+			top: -20px;		/* Posicionamento do menu no topo da pagina, de -20pxpx*/
+			right:-10px;   /* colar à direita */
+			}
+			
+nav#menu li{display: inline-block;	
+		  background-color: #dddddd;	
+		  padding: 15px;
+		  float:left;
+		  transition: background-color 1s;}
+
+nav#menu li:hover { background-color: #606060;}
+
+nav#menu a{ color: #000000;
+		   text-decoration: none;}
+		   
+nav#menu a:hover{color: #ffffff;}
+
+
+/* Inicio do submeno*/
+#menu ul ul{ 	display: none;
+			width: 70px;
+			position: absolute;	/* tipo de Posicionamento Absoluto*/
+			top: 48px;		/* Posicionamento do submenu no topo da pagina, de -20pxpx*/
+			left: 119px;   /* Posicionamento lateral esquerdo de 510px*/
+			padding: 0px;	font-size: 9.6pt;
+}
+
+#menu ul ul li a {
+				
+				color: #ffffff;}
+
+#menu ul  li:hover  ul{	display: block;
+					}
+
+#menu ul  ul li {	
+ width: 105%;
+ float: none;
+ text-align: center;
+ background-color: #848484;
+}
+/*Fim do submenu*/
+
+/*Inicio do corpo do website*/
+section#corpo{ display: block;
+			  width: 500px;
+			  float: left;
+			  border-right: 5px solid #606060;	
+			  padding-right: 20px;}
+			  
+article#noticia-principal h2 { font-size: 13pt;
+							color: #606060;
+							background-color: #dddddd;
+							padding: 5px 0px 5px 0px;
+							margin: 10px 0px 10px 10px;
+}
+
+header#cabecalho-artigo h1 { font-family: 'FonteLogo', sans-serif;
+						   font-size: 20pt;
+						   color: #606060;
+						   margin-bottom: 0px;
+						   margin-top: 0px;
+}
+
+header#cabecalho-artigo h2 { font-size: 13pt;
+						   color: #cecece;
+						   background-color: #ffffff;
+						   margin: 0px;
+	
+}
+
+article#cabecalho-artigo h3 { font-size: 12pt;
+						   color: #606060;
+	
+}
+
+.direita { text-align: right; }
+
+table#tabelaformula1 { border: 1px solid #606060;
+				 border-spacing: 0px;
+			     margin-left: auto;
+			     margin-right: auto;}
+
+table#tabelaformula1 td { border: 1px solid #606060;
+				   padding: 10px;
+				   text-align: center;}
+
+table#tabelaformula1 td.ce { color: #ffffff;
+					  background-color: #606060;
+					  vertical-align: top;
+					  font-weight: bold;
+					  }				      
+
+table#tabelaformula1 td.cd { background-color: #f9f9f9;
+	
+}
+
+table#tabelaformula1 caption { color: #888888;
+						font-size: 10pt;
+						font-weight: bold;	
+}
+
+table#tabelaformula1 caption span { display: block;
+							float: right;
+							color: #000000;
+							font-size: 8pt;
+							margin-top: 10px;}
+			  
+aside#lateral{ display: block;
+			  width: 350px;
+			  float: right;
+			  background-color: #dddddd;
+			  padding:10px;
+			  margin-top: 10px;
+			  box-shadow: 2px 2px 2px rgba(0,0,0,.5)}
+			  
+aside#lateral h1 { font-family: 'FonteLogo', sans-serif;
+				  font-size: 20pt;
+				  color: #606060;
+				  margin-top: 0px;}
+
+aside#lateral h2 { font-size: 13pt;
+				  color: #ffffff;
+				  background-color: #606060;
+				  padding: 5px;}
+			  
+footer#rodape{ clear: both;
+			  border-top: 1px solid #606060;
+}
+
+footer#rodape p { text-align: center;
+}			  
+
+@media only screen and (max-width:900px){
+aside#lateral {width:96%;}
+
+div#interface{width: 530px;}
+
+header#cabecalho h1{
+	padding-top:50px
+}
+nav#menu ul {font-size:0.7em;left:0}
+h2{display:none}
+}
+
+@media only screen and (max-width:620px) {
+  /* Para Telefones temos o seguinte Layout: */
+  body{background-image: none}
+header#cabecalho h1{
+	padding-top:0
+}
+  
+
+.para-telefone{
+	width: 20px;
+	height:20px;
+	text-align:center;
+  background-color: #555;
+  color: white;
+  border-radius: 5px;
+  padding:3px;
+  display:inline-block;
+  float:right;
+}
+nav#menu ul{position:fixed;display:none;
+top:0;left:0;margin:0;padding:0;width:500px;
+font-size:0.7em}
+
+#menu ul ul{
+			width: 50px;
+			position: fixed;	/* tipo de Posicionamento Absoluto*/
+		top: 42px;		/* Posicionamento do submenu no topo da pagina, de -20pxpx*/
+			left: 64px;  /* Posicionamento lateral esquerdo de 510px*/
+			font-size:0.9em
+}
+  .active {
+  background-color: #4CAF50;
+  color: white;
+}
+  
+section#corpo{width:100%;}
+
+div#interface{width: 100%; /* Largura do anbiente de navegação de 900px*/}
+
+header#cabecalho img#icone{width:25%;}
+
+div#interface{width: 530px;}

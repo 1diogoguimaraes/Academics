@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset ="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Fotos</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/estilos_2.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="Imagens/icon.png">
+	<style>
+			h3 {
+	color:#838c98;
+}
+
+img {
+	border:1px solid #EEE;
+}
+
+#principal {
+	margin: auto;
+	position: relative;
+}
+
+.contenedorfoto {
+	float:left;
+	width:190px;
+	height:180px;
+	margin:10px;
+	padding:5px;
+	background-color:#f5f7f9;
+	border-right: #a5a7aa solid 1px;
+	border-bottom: #a5a7aa solid 1px;
+	text-align:center;
+}
+
+.contenedorfoto a {
+	text-decoration: none;
+}
+
+.contenedorfoto span {
+	color:#515151;
+	font-family: Trebuchet MS;
+	font-size: 9pt;
+}
+	</style>
+</head>
+
+<script> 
+		function mudaFoto (foto)
+		{
+			document.getElementById("icone").src = foto;
+		}
+		function myFunction() {
+  var x = document.getElementById("menudentro");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<body>
+
+<div id="interface">
+	<header id="cabecalho">
+<div class="para-telefone">
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a></div>
+		<h1>Fórmula 1</h1>
+			<h2>Saiba mais sobre a Fórmula 1</h2>
+
+<img id="icone" src="Imagens/bandeira.png";>
+
+	<nav id="menu">
+			<ul id="menudentro">
+				<li onmouseover="mudaFoto('Imagens/bandeira.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="index.html">Home</a></li>
+				<li onmouseover="mudaFoto('Imagens/historia.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"> <a> História</a>
+					<ul>
+						<li><a href="pilotos.html">Pilotos</a></li>
+						<li><a href="formula1.html">Fórmula 1</a></li>
+					</ul>
+					</li>
+				<li onmouseover="mudaFoto('Imagens/fotos.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="fotos.html"> Fotos</a></li>
+				<li onmouseover="mudaFoto('Imagens/video.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="videos.html">Videos</a></li>
+				<li onmouseover="mudaFoto('Imagens/curioso.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="curiosidade.html">Curiosidade</a></li>
+				<li onmouseover="mudaFoto('Imagens/tv.png')" onmouseout="mudaFoto('Imagens/bandeira.png')"><a href="http://www.tvzava.com/2018/05/tvsport_66.html" target="_blank">Ao Vivo</a></li>
+			</ul>
+	</nav>
+</header>
+
+<div id="principal">
+	<div class="contenedorfoto"><a href="Fotos/primeira.jpg" ><img src="Fotos/primeira.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/segunda.jpg"><img src="Fotos/segunda.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/terceira.jpg"><img src="Fotos/terceira.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/quarta.jpg"><img src="Fotos/quarta.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/quinta.jpg"><img src="Fotos/quinta.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem bastante mais extensa</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/sexta.jpg"><img src="Fotos/sexta.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/sexta.jpg"><img src="Fotos/sexta.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/setima.jpg"><img src="Fotos/setima.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/oitava.jpg"><img src="Fotos/oitava.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/nona.jpg"><img src="Fotos/nona.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/decima.jpg"><img src="Fotos/decima.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/decimaprimeira.jpg"><img src="Fotos/decimaprimeira.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/decimasegunda.jpg"><img src="Fotos/decimasegunda.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/decimaterceira.jpg"><img src="Fotos/decimaterceira.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/decimaquarta.jpg"><img src="Fotos/decimaquarta.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/decimaquinta.jpg"><img src="Fotos/decimaquinta.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/decimasexta.jpg"><img src="Fotos/decimasexta.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/decimasetima.jpg"><img src="Fotos/decimasetima.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/decimaoitava.jpg"><img src="Fotos/decimaoitava.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/decimanona.jpg"><img src="Fotos/decimanona.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/vigesima.jpg"><img src="Fotos/vigesima.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+	<div class="contenedorfoto"><a href="Fotos/vigesimaprimeira.jpg"><img src="Fotos/vigesimaprimeira.jpg" width="188" height="178" border="0" alt=""/><br /><span>Descrição da imagem</span></a></div>
+</div>
+
+<footer id="rodape">	
+		<p>Website feito por <b>José Jacob Barros Bongo</b><br/>
+<a href="https://www.facebook.com/bongotecnology" target="_blank"> Facebook</a> | <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a>
+Copyright &copy 2019</p>
+</footer></div>
+</body>
+</html>

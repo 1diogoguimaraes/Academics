@@ -1,0 +1,22 @@
+@media only screen and (max-width: 800px) {
+	/*Para tablets*/
+
+body{ font-size: 100%;	
+	}
+
+nav#menu{width: 100%;
+		  padding: 0;
+		  float: center;}
+
+aside#lateral {width: 100%;
+			  float: center;}
+}
+
+img{width: 500px;}
+
+
+@media only screen and (max-width: 500px) {
+	/*Para telefones*/
+nav#menu ul, aside#lateral {width: 100%;
+						 float: center;}
+}
